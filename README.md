@@ -5,7 +5,7 @@
 
 > A beautiful login interface inspired by nature, featuring leaf illustrations, soothing green tones, and a refreshing layout.
 
-![Preview](images/leaf-gradient-illustration-design.png)
+![Preview](images/preview.png)
 
 ---
 
