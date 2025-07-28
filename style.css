@@ -1,0 +1,284 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}  
+#image{
+    width: 50px;
+    height: 40px;
+    
+}
+.logo {
+    display: block;
+    position: absolute;  /* Ensures it's placed relative to the nearest positioned ancestor */
+    top: 10px;  /* Moves it 20px from the top */
+    left: 2px;  /* Centers it horizontally */
+    font-size: 25px;  /* Adjust the font size if needed */
+    font-weight: bold;
+    margin-left: 1px;
+    
+}
+
+/* Body Styling */
+body  {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddf0e4;
+}
+
+/* Main Container */
+.login-container {
+    display:flex;
+    width: 800px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+
+    box-shadow: inset 5px 25px 100px #1a6839, inset -5px -10px 10px #e2e6e5;
+    box-shadow: inset 5px 5px 10px #bebebe, hidden;
+}
+
+/* Left Section - Image Background */
+.left-section {
+    flex: 1;
+    background: url('images/leafy.jpeg') no-repeat center center/cover;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 5px 25px 100px #3c8258, inset -5px -10px 10px #e2e6e5;
+    overflow: hidden;
+}
+
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: rgba(18, 36, 23, 0.3);
+    border-radius: 15px;
+    color: rgb(245, 245, 245);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header in Left Section */
+.overlay h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Buttons in Left Section */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-outline {
+    padding: 8px 15px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-outline:hover{
+    background: #717271; /* Brighter green */
+    box-shadow: 0px 4px 15px rgba(5, 5, 5, 0.3);
+    font-size: 15px;
+}
+
+.btn-dark {
+    padding: 8px 15px;
+    background: rgba(4, 39, 31, 0.83);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-dark:hover{
+    background: #1b6b3e; /* Brighter green */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+}
+
+/* Profile Section */
+.profile {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile img {
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile h4 {
+    margin:10px;
+}
+
+/* Right Section - Login Form */
+.right-section {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.right-section h2 {
+    font-size: 21px;
+    
+}
+.outlined {
+  color: rgb(72, 122, 55);
+  
+  text-shadow:
+    -1px -1px 0 rgb(214, 214, 214),
+     1px -1px 0 green,
+    -1px  1px 0 green,
+     1px  1px 0 green;
+     letter-spacing: 0.5px;
+}
+
+.right-section p {
+    color: gray;
+    margin: 5px 0 15px;
+}
+
+
+/* Input Fields */
+.right-section input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border:1px solid #739a77;
+    border-radius: 5px ;
+    font-size: 14px;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+    outline: none;   
+}
+
+/* Forgot Password */
+.forgot-password {
+    text-align: right;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    color: rgb(77, 123, 40);
+    text-decoration: none;
+}
+.forgot-password a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 12.5px;
+}
+/* Google Login Button */
+.google-login {
+    width: 100%;
+    padding: 10px;
+    border:1px solid #739a77;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+   
+}
+.google-login:hover {
+      font-size: 14px;
+}
+
+.google-login i {
+    margin-right: 5px;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgb(26, 78, 53);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: inset 5px 5px 10px #0a3824, inset 5px 5px 10px #0a5417;
+    outline: none;
+}
+.login-btn:hover{
+    background: #1b6b3e; /* Brighter green */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+/* Signup Text */
+.signup-text {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.signup-text a {
+    color: rgb(19, 199, 73);
+    text-decoration: none;
+}
+.signuptext:hover{
+    font-size: 16px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.social-icons i {
+    margin: 0 8px;
+    cursor: pointer;
+    color: gray;
+}
+/* Sticky Footer */
+.footer {
+    background-color: #a8c2af; /* Light background */
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Space between links */
+    margin-top: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #176c2b; /* Adjust color */
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #0e4a1e; /* Darker shade on hover */
+}
